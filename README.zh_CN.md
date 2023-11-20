@@ -28,3 +28,8 @@
 5. 新的语言文件将会在你指定的地址生成，使用查找即可快速翻译未翻译的条目
 ![Done](img/done.png)
 ![NewFileWithWTTTag](img/newFileWithWTTTag.png)
+
+## 升级
+
+1. 在输入目标语言文件的时候可以输入`all`,这将会将除了源语言文件外所有语言文件生成待翻译文件
+![oneToALL](img/ontToAll.png)

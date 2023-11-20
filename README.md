@@ -23,8 +23,13 @@ Finaly will out put all entry into a new file, then you can easily translate tho
 3. Input your lang file folder path
 ![GetPath](img/getPath.png)
 ![CopyIntoTerminal](img/copyIntoTermianl.png)
-4. Input the sourse and your target lang file
+4. Input the source and your target lang file
 ![InPutLangName](img/InPutLangName.png)
 5. Check the new lang file in your folder, and just translate it.
 ![Done](img/done.png)
 ![NewFileWithWTTTag](img/newFileWithWTTTag.png)
+
+## UPDATE
+
+1. You can input `all` for source the can create all other lang in folder
+![oneToALL](img/ontToAll.png)
