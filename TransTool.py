@@ -28,27 +28,28 @@ def readFile(path, source, target, isALL):
     print("There are ", count, "lines wait to trans, mark with #WTT")
 
 
-target_dic = {}
-path = input("Please input path of lang \n") + "\\"
-source = input("Please input the souse lang(without .lang)\n") + ".lang"
-target = input(
-    "Please input the target lang(without .lang) or just input all for others\n") + ".lang"
+if __name__ == "__main__":
+    target_dic = {}
+    path = input("Please input path of lang \n") + "\\"
+    source = input("Please input the souse lang(without .lang)\n") + ".lang"
+    target = input(
+        "Please input the target lang(without .lang) or just input all for others\n") + ".lang"
 
-if 'all' in target:
-    if not os.path.exists(path + 'new'):
-        os.mkdir(path + 'new')
-    for lang in os.listdir(path):
-        if source in lang or os.path.isdir(path + lang):
-            continue
-        target_dic = {}
-        with open(path + lang, encoding="UTF8") as file:
+    if 'all' in target:
+        if not os.path.exists(path + 'new'):
+            os.mkdir(path + 'new')
+        for lang in os.listdir(path):
+            if source in lang or os.path.isdir(path + lang):
+                continue
+            target_dic = {}
+            with open(path + lang, encoding="UTF8") as file:
+                for lines in file.readlines():
+                    if '=' in lines:
+                        target_dic[lines.split("=")[0]] = lines.split("=")[1]
+            readFile(path, source, lang, True)
+    else:
+        with open(path + target, encoding="UTF8") as file:
             for lines in file.readlines():
                 if '=' in lines:
                     target_dic[lines.split("=")[0]] = lines.split("=")[1]
-        readFile(path, source, lang, True)
-else:
-    with open(path + target, encoding="UTF8") as file:
-        for lines in file.readlines():
-            if '=' in lines:
-                target_dic[lines.split("=")[0]] = lines.split("=")[1]
-    readFile(path, source, target, False)
+        readFile(path, source, target, False)
