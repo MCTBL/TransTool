@@ -12,8 +12,15 @@
 如果不存在翻译则使用原文，且打上一个标签#WTT(Wait To Translate)标记
 
 最后会将这些新的条目组成一个新的文件放入文件夹中，随后就可以开始翻译
+
+### 命令行版本
+
 ![before](img/before.png)
 ![result](img/result.png)
+
+### gui版本
+
+![gui](img/gui_version.png)
 
 ## 如何使用
 

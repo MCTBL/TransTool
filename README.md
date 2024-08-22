@@ -12,8 +12,15 @@ If there are translate in second lang it will use it.
 If there are not translate in second lang, it will use the original text in the first one, and mark it #WTT(Wait To Translate)
 
 Finaly will out put all entry into a new file, then you can easily translate those untranslated text.
+
+### terminal ver
+
 ![before](img/before.png)
 ![result](img/result.png)
+
+### gui ver
+
+![gui](img/gui_version.png)
 
 ## How To Use
 
